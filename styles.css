@@ -309,6 +309,16 @@ a {
   padding-top: 8px;
 }
 
+.home-section {
+  width: min(1180px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: 76px 0;
+}
+
+.home-section.compact {
+  padding-top: 8px;
+}
+
 .section-heading {
   max-width: 760px;
   margin-bottom: 28px;
@@ -368,6 +378,155 @@ a {
 .menu-grid a:focus-visible {
   text-decoration: underline;
   text-underline-offset: 4px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.feature-card {
+  min-height: 260px;
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  padding: 24px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: 0 1px 0 rgba(14, 32, 46, 0.04);
+}
+
+.feature-card span {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border: 1px solid rgba(13, 111, 115, 0.2);
+  border-radius: 8px;
+  background: #eaf5f4;
+  color: var(--teal-dark);
+  font-weight: 800;
+}
+
+.feature-card h3 {
+  margin: 0;
+  font-size: 22px;
+  line-height: 1.32;
+}
+
+.feature-card p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.feature-card a {
+  color: var(--ink);
+}
+
+.feature-card a:hover,
+.feature-card a:focus-visible {
+  color: var(--teal-dark);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.home-band {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(24px, 5vw, 64px);
+  align-items: center;
+  padding: 76px clamp(18px, 4vw, 56px);
+  background: #ffffff;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.home-band > div {
+  width: min(560px, 100%);
+}
+
+.home-band h2 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 42px);
+  line-height: 1.2;
+}
+
+.home-band p:not(.eyebrow) {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 17px;
+}
+
+.principle-grid {
+  width: min(620px, 100%);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  justify-self: end;
+}
+
+.principle-grid p {
+  min-height: 118px;
+  margin: 0;
+  padding: 20px;
+  border: 1px solid rgba(13, 111, 115, 0.18);
+  border-radius: 8px;
+  background: #f1fbfa;
+  color: #263544;
+}
+
+.principle-grid strong {
+  display: block;
+  margin-bottom: 6px;
+  color: var(--teal-dark);
+}
+
+.insight-list {
+  display: grid;
+  gap: 12px;
+}
+
+.insight-row {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.36fr) minmax(0, 1fr);
+  gap: 18px;
+  align-items: center;
+  min-height: 86px;
+  padding: 20px 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.insight-row strong {
+  color: var(--teal-dark);
+  font-size: 18px;
+}
+
+.insight-row span {
+  color: var(--muted);
+}
+
+.insight-row:hover,
+.insight-row:focus-visible {
+  border-color: rgba(13, 111, 115, 0.44);
+  box-shadow: 0 12px 30px rgba(14, 32, 46, 0.1);
+}
+
+.editorial-panel {
+  padding: clamp(24px, 4vw, 42px);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--shadow);
+}
+
+.editorial-panel h2 {
+  margin: 0 0 24px;
+  font-size: clamp(26px, 3vw, 38px);
+  line-height: 1.22;
 }
 
 .checklist {
@@ -588,6 +747,10 @@ a {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .primary-nav {
     gap: 2px;
     font-size: 14px;
@@ -686,6 +849,45 @@ a {
 
   .hero-actions a {
     width: 100%;
+  }
+
+  .home-section {
+    width: calc(100% - 24px);
+    padding: 54px 0;
+  }
+
+  .feature-grid,
+  .principle-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .feature-card {
+    min-height: auto;
+  }
+
+  .home-band {
+    grid-template-columns: 1fr;
+    padding: 54px 18px;
+  }
+
+  .home-band > div,
+  .principle-grid {
+    width: 100%;
+  }
+
+  .principle-grid {
+    justify-self: stretch;
+  }
+
+  .principle-grid p {
+    min-height: auto;
+  }
+
+  .insight-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+    min-height: auto;
+    padding: 18px;
   }
 
   .checklist {

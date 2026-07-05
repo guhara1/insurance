@@ -12,6 +12,27 @@
         <link rel="canonical" href="https://bohumbase.com/insurance-calculator/">
     <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg?v=favicon-20260527">
 <link rel="stylesheet" href="../styles.css?v=ux2-20260526">
+    <style>
+      .calc-tool{margin:8px 0 34px;padding:22px;border:1px solid rgba(13,111,115,.22);border-radius:10px;background:linear-gradient(135deg,#f0fbfa,#fff8ea);box-shadow:0 12px 30px rgba(14,32,46,.08)}
+      .calc-badge{display:inline-block;padding:4px 10px;border-radius:999px;background:var(--teal,#0d6f73);color:#fff;font-size:12px;font-weight:900;letter-spacing:.02em}
+      .calc-head h2{margin:10px 0 6px;font-size:20px;color:var(--ink,#17212b)}
+      .calc-head p{margin:0;color:#33434f;font-size:14.5px;line-height:1.7}
+      .calc-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:16px 0}
+      .calc-grid label{display:flex;flex-direction:column;gap:6px;font-size:13.5px;font-weight:800;color:var(--teal-dark,#064e52)}
+      .calc-grid input{padding:10px 12px;border:1px solid rgba(13,111,115,.28);border-radius:8px;background:#fff;font-size:16px;font-weight:700;color:var(--ink,#17212b)}
+      .calc-grid input:focus-visible{outline:none;border-color:var(--teal,#0d6f73);box-shadow:0 0 0 3px rgba(13,111,115,.15)}
+      .calc-result{margin-top:4px;padding:18px;border:1px solid rgba(185,138,47,.3);border-radius:8px;background:#fff}
+      .calc-amount{display:flex;flex-direction:column;gap:4px}
+      .calc-amount span{font-size:13px;font-weight:800;color:var(--muted,#5b6876)}
+      .calc-amount strong{font-size:28px;font-weight:900;color:var(--teal-dark,#064e52);line-height:1.2}
+      .calc-break{margin:10px 0 0;font-size:13px;line-height:1.6;color:#4a5763}
+      .calc-verdict{margin:10px 0 0;padding:9px 12px;border-radius:8px;font-size:14px;font-weight:800}
+      .calc-verdict.ok{background:var(--teal-soft,#eaf5f4);color:var(--teal-dark,#064e52)}
+      .calc-verdict.warn{background:var(--gold-soft,#fff7e6);color:#8a6410}
+      .calc-verdict.over{background:#fdecec;color:#b3261e}
+      .calc-note{margin:12px 0 0;font-size:12.5px;line-height:1.65;color:var(--muted,#5b6876)}
+      @media (max-width:560px){.calc-grid{grid-template-columns:1fr}.calc-amount strong{font-size:24px}}
+    </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"보험료 계산 원리: 나이, 위험, 보장 조건이 가격을 만드는 방식","description":"보험료가 가입연령, 보장 범위, 갱신 여부, 직업과 건강 상태에 따라 달라지는 원리를 설명합니다.","inLanguage":"ko-KR","image":"https://bohumbase.com/assets/insurance-knowledge-hero.png","datePublished":"2026-05-26","dateModified":"2026-05-26","author":{"@type":"Organization","name":"보험지식 편집팀"},"reviewedBy":{"@type":"Organization","name":"보험지식 검수팀"},"publisher":{"@type":"Organization","name":"보험지식"}}</script>
     <script type="application/ld+json" class="breadcrumb-schema">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://bohumbase.com/"},{"@type":"ListItem","position":2,"name":"비교·계산","item":"https://bohumbase.com/insurance-calculator/"},{"@type":"ListItem","position":3,"name":"보험료 계산 원리","item":"https://bohumbase.com/insurance-calculator/"}]}</script>
     <script type="application/ld+json" class="organization-schema">{"@context":"https://schema.org","@type":"Organization","name":"YH기획","alternateName":"보험지식","url":"https://bohumbase.com/","email":"help@bohumbase.com","identifier":"503-30-66944","address":{"@type":"PostalAddress","streetAddress":"부평대로 283 부평우림라이온스밸리","addressLocality":"부평구","addressRegion":"인천광역시","addressCountry":"KR"},"sameAs":["https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/","https://medium.com/@88smartbro88","https://x.com/gugeulmake84173","https://t.me/googleseolab"]}</script>
@@ -139,8 +160,25 @@
           </section>
           <nav class="article-toc" aria-label="본문 목차">
             <strong>이 글에서 확인할 내용</strong>
-            <div><a href="#section-1">보험료는 위험의 가격입니다</a><a href="#section-2">나이와 건강 상태의 영향</a><a href="#section-3">보장 범위와 가입금액</a><a href="#section-4">갱신형과 비갱신형</a><a href="#section-5">빠른 체크리스트</a></div>
+            <div><a href="#calc">적정 보험료 계산기</a><a href="#section-1">보험료는 위험의 가격입니다</a><a href="#section-2">나이와 건강 상태의 영향</a><a href="#section-3">보장 범위와 가입금액</a><a href="#section-4">갱신형과 비갱신형</a><a href="#section-5">빠른 체크리스트</a></div>
           </nav>
+          <section class="calc-tool" id="calc" aria-label="적정 보험료 점검 계산기">
+            <div class="calc-head">
+              <span class="calc-badge">계산기</span>
+              <h2>적정 보험료 점검 계산기</h2>
+              <p>월 실수령액과 현재 내는 보장성 보험료를 넣으면 소득 대비 보험료 비중과 권장 상한을 계산합니다. 값은 <strong>만원</strong> 단위입니다.</p>
+            </div>
+            <form class="calc-grid" id="premiumCalc">
+              <label>월 실수령액<input type="number" inputmode="numeric" min="0" step="10" name="income" value="300"></label>
+              <label>현재 월 보장성 보험료<input type="number" inputmode="numeric" min="0" step="1" name="premium" value="20"></label>
+            </form>
+            <div class="calc-result" role="status" aria-live="polite">
+              <div class="calc-amount"><span>소득 대비 보험료 비중</span><strong id="premiumOut">—</strong></div>
+              <p class="calc-break" id="premiumBreak"></p>
+              <p class="calc-verdict" id="premiumVerdict"></p>
+            </div>
+            <p class="calc-note">※ 보장성 보험료는 실수령액의 8~10% 안쪽을 권장선으로 봅니다(저축성·연금 제외). 개인 상황에 따라 달라질 수 있는 참고용 기준이며, 특정 상품 가입을 권유하지 않습니다.</p>
+          </section>
 <h2 id="section-1">보험료는 위험의 가격입니다</h2>
 <p>보험료는 보험회사가 약관에서 정한 위험을 부담하는 대가입니다. 가입자의 나이, 성별, 직업, 건강 상태, 운전 여부, 보장 범위, 보험기간, 납입기간, 갱신 여부가 함께 반영될 수 있습니다. 같은 상품명이라도 가입 조건이 다르면 보험료가 달라질 수 있고, 같은 보험료라도 보장 범위가 다를 수 있습니다.</p>
 <p>따라서 보험료 비교는 숫자만 비교하는 일이 아닙니다. 월 보험료가 낮아 보이는 상품은 가입금액이 낮거나, 보장 범위가 좁거나, 갱신형 구조이거나, 자기부담금과 면책 조건이 다를 수 있습니다. 비교 전에는 조건을 최대한 맞춰야 합니다.</p>
@@ -228,6 +266,26 @@
         </div>
       </div>
     </footer>
-    <nav class="mobile-bottom-nav"><a href="../insurance-calculator/">계산</a><a href="../insurance-checklist/">체크</a><a href="../insurance-claim/">청구</a></nav><script src="../script.js?v=ux2-20260526"></script>
+    <nav class="mobile-bottom-nav"><a href="../insurance-calculator/">계산</a><a href="../insurance-checklist/">체크</a><a href="../insurance-claim/">청구</a></nav><script>
+      (function(){
+        var f=document.getElementById('premiumCalc'); if(!f) return;
+        var out=document.getElementById('premiumOut'),brk=document.getElementById('premiumBreak'),ver=document.getElementById('premiumVerdict');
+        function num(n){var v=parseFloat(f[n].value);return isNaN(v)||v<0?0:v;}
+        function calc(){
+          var income=num('income'),premium=num('premium');
+          if(income<=0){out.textContent='—';brk.textContent='월 실수령액을 입력하세요.';ver.textContent='';ver.className='calc-verdict';return;}
+          var pct=premium/income*100, lo=Math.round(income*0.08), hi=Math.round(income*0.10);
+          out.textContent=pct.toFixed(1)+'%';
+          brk.textContent='권장 상한: 월 '+lo.toLocaleString()+'만~'+hi.toLocaleString()+'만원 (실수령의 8~10%)';
+          var cls,msg;
+          if(pct<=10){cls='ok';msg='적정 범위입니다. 보장 공백이 없는지 함께 점검하세요.';}
+          else if(pct<=15){cls='warn';msg='다소 높은 편입니다. 중복 보장·저축성 비중을 점검해 보세요.';}
+          else{cls='over';msg='과다한 편입니다. 리모델링으로 보험료 부담을 줄이는 것을 검토하세요.';}
+          ver.textContent=msg; ver.className='calc-verdict '+cls;
+        }
+        f.addEventListener('input',calc); calc();
+      })();
+    </script>
+    <script src="../script.js?v=ux2-20260526"></script>
   </body>
 </html>

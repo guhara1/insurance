@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img">
+  <defs>
+    <linearGradient id="g4be042" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(55 .5 .5)">
+      <stop offset="0" stop-color="#204e8f"/><stop offset="1" stop-color="#4f8fd6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g4be042)"/>
+  <circle cx="726" cy="46" r="150" fill="#ffffff" opacity="0.08"/>
+  <circle cx="686" cy="420" r="110" fill="#ffffff" opacity="0.07"/>
+  <g transform="translate(590,125) scale(1.9)"><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M22 60l6-18c1-4 4-6 8-6h28c4 0 7 2 8 6l6 18"/><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M18 60h64v12a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4M34 76a4 4 0 0 1-4 4h-6a4 4 0 0 1-4-4v-4"/><circle fill="#ffffff" cx="34" cy="66" r="4"/><circle fill="#ffffff" cx="66" cy="66" r="4"/></g>
+  <text x="70" y="216" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">마일리지 특약</text><text x="70" y="278" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">보험료 절감</text>
+  <text x="70" y="408" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="22" font-weight="800" fill="#ffffff" opacity="0.92"><tspan font-family="serif">保</tspan>  보험지식</text>
+  <g transform="translate(70,420)">
+    <rect x="0" y="-2" width="73" height="26" rx="13" fill="#ffffff" opacity="0.18"/>
+    <text x="14" y="16" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="15" font-weight="700" fill="#ffffff">자동차</text>
+  </g>
+</svg>

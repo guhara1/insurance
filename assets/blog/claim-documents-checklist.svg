@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img">
+  <defs>
+    <linearGradient id="ge71e1b" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(51 .5 .5)">
+      <stop offset="0" stop-color="#464fa0"/><stop offset="1" stop-color="#7d84d6"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#ge71e1b)"/>
+  <circle cx="740" cy="67" r="150" fill="#ffffff" opacity="0.08"/>
+  <circle cx="700" cy="420" r="110" fill="#ffffff" opacity="0.07"/>
+  <g transform="translate(590,125) scale(1.9)"><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M32 20h26l12 12v48H32z"/><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M58 20v12h12"/><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M40 52l6 6 12-14"/></g>
+  <text x="70" y="216" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">청구 서류</text><text x="70" y="278" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">상황별 정리</text>
+  <text x="70" y="408" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="22" font-weight="800" fill="#ffffff" opacity="0.92"><tspan font-family="serif">保</tspan>  보험지식</text>
+  <g transform="translate(70,420)">
+    <rect x="0" y="-2" width="103" height="26" rx="13" fill="#ffffff" opacity="0.18"/>
+    <text x="14" y="16" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="15" font-weight="700" fill="#ffffff">보험금청구</text>
+  </g>
+</svg>

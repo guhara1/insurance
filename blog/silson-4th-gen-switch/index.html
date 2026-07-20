@@ -13,6 +13,21 @@
         <link rel="canonical" href="https://bohumbase.com/blog/silson-4th-gen-switch/">
     <link rel="icon" type="image/svg+xml" href="../../assets/favicon.svg?v=favicon-20260527">
 <link rel="stylesheet" href="../../styles.css?v=ux2-20260526">
+    <style>
+      .blog-gallery{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:18px;margin:6px 0 10px}
+      .blog-card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line,#dce4ea);border-radius:12px;overflow:hidden;box-shadow:0 8px 22px rgba(14,32,46,.06);transition:transform .12s ease,box-shadow .12s ease}
+      .blog-card:hover,.blog-card:focus-visible{transform:translateY(-3px);box-shadow:0 14px 30px rgba(14,32,46,.12);outline:none}
+      .blog-thumb{aspect-ratio:16/9;line-height:0;background:#eef3f4}
+      .blog-thumb img{width:100%;height:100%;object-fit:cover;display:block}
+      .blog-info{padding:13px 15px 16px}
+      .blog-info strong{display:block;font-size:15.5px;line-height:1.45;margin-bottom:7px;color:var(--ink,#17212b)}
+      .blog-info small{font-size:12.5px;color:var(--muted,#5b6876)}
+      .blog-hero{margin:0 0 22px}
+      .blog-hero img{width:100%;height:auto;border-radius:12px;display:block}
+      .blog-figure{margin:26px 0}
+      .blog-figure img{width:100%;height:auto;display:block}
+      .blog-figure figcaption{font-size:12.5px;color:var(--muted,#5b6876);margin-top:8px;text-align:center}
+    </style>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"4세대 실손보험 갈아타야 할까: 세대별 자기부담금·전환 손익","description":"1~4세대 실손의 자기부담금과 보험료 차이, 전환 시 손익 계산법, 비급여 이용량으로 전환 여부를 판단하는 기준을 정리했습니다.","inLanguage":"ko-KR","image":"https://bohumbase.com/assets/insurance-knowledge-hero.png","datePublished":"2026-06-06","dateModified":"2026-06-06","author":{"@type":"Organization","name":"보험지식 편집팀"},"reviewedBy":{"@type":"Organization","name":"보험지식 검수팀"},"publisher":{"@type":"Organization","name":"보험지식"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://bohumbase.com/blog/silson-4th-gen-switch/"}}</script>
     <script type="application/ld+json" class="breadcrumb-schema">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"홈","item":"https://bohumbase.com/"},{"@type":"ListItem","position":2,"name":"블로그","item":"https://bohumbase.com/blog/"},{"@type":"ListItem","position":3,"name":"4세대 실손 전환","item":"https://bohumbase.com/blog/silson-4th-gen-switch/"}]}</script>
     <script type="application/ld+json" class="organization-schema">{"@context":"https://schema.org","@type":"Organization","name":"YH기획","alternateName":"보험지식","url":"https://bohumbase.com/","email":"help@bohumbase.com","identifier":"503-30-66944","address":{"@type":"PostalAddress","streetAddress":"부평대로 283 부평우림라이온스밸리","addressLocality":"부평구","addressRegion":"인천광역시","addressCountry":"KR"},"sameAs":["https://www.linkedin.com/in/%EB%B0%B1%ED%98%B8-%EA%B0%95-a84273261/","https://medium.com/@88smartbro88","https://x.com/gugeulmake84173","https://t.me/googleseolab"]}</script>
@@ -145,6 +160,7 @@
       </section>
       <div class="article-shell article-shell-single">
         <article class="article-body">
+          <figure class="blog-hero"><img src="../../assets/blog/silson-4th-gen-switch.svg" alt="4세대 실손보험 전환 손익을 나타낸 일러스트" width="800" height="450"></figure>
           <section class="article-brief" aria-label="본문 핵심 요약">
             <div class="brief-card primary"><span>핵심 요약</span><p>4세대 실손은 보험료가 1~2세대보다 크게 낮지만, 비급여 자기부담률이 30%로 높아 병원을 자주 가는 사람에게는 오히려 불리할 수 있습니다.</p></div>
             <div class="brief-card"><span>확인 기준</span><p>연간 비급여 진료비와 청구 빈도를 먼저 계산해, 낮아지는 보험료와 늘어나는 자기부담금을 비교한 뒤 전환 여부를 정해야 합니다.</p></div>
@@ -164,7 +180,8 @@
           <p>반면 보험료는 정반대입니다. 같은 40대 기준으로 1세대 실손은 월 4~6만 원대까지 오른 경우가 흔하지만, 4세대는 월 1~2만 원대로 시작하는 경우가 많아 3~4배 차이가 나기도 합니다. 게다가 1·2세대는 갱신주기가 도래할 때마다 보험료가 크게 뛰어, 나이가 들수록 유지 부담이 급격히 커집니다. 세대별 보장·자기부담 조건을 항목별로 비교하려면 <a href="../../medical-insurance-comparison/">실손보험 비교 기준</a>을 함께 보면 정리가 됩니다.</p>
           <p>다만 보험료가 싸다는 이유만으로 전환을 결정하면 안 됩니다. 4세대는 직전 1년간 비급여 보험금을 받은 실적에 따라 이듬해 비급여 보험료를 5개 구간으로 나눠 할인·할증합니다. 비급여 청구가 없으면 약 5% 할인, 많으면 최대 300% 할증이 적용되므로, 도수치료나 비급여 주사를 자주 이용하는 사람은 낮게 시작한 보험료가 빠르게 올라갈 수 있습니다.</p>
 
-          <h2 id="section-3">전환 시 손익을 계산하는 방법</h2>
+          <figure class="blog-figure"><img src="../../assets/blog/silson-4th-gen-switch-flow.svg" alt="4세대 실손 관련 글의 핵심 내용을 단계별로 정리한 흐름 도식" width="760" height="414" loading="lazy"><figcaption>글의 핵심 흐름 한눈에 보기</figcaption></figure>
+        <h2 id="section-3">전환 시 손익을 계산하는 방법</h2>
           <p>전환 손익은 '줄어드는 연간 보험료'와 '늘어나는 연간 자기부담금'을 나란히 놓고 계산합니다. 예를 들어 1세대에서 4세대로 바꾸면 보험료가 연 40만 원 줄어든다고 가정해 봅시다. 이때 병원을 거의 가지 않는 사람은 자기부담금 증가가 미미하므로 연 40만 원을 그대로 아끼는 셈이 됩니다. 반대로 매달 도수치료를 받아 비급여 진료비가 연 300만 원 나오는 사람은, 자기부담률이 20%p만 높아져도 추가 부담이 연 60만 원 이상 늘어 오히려 손해입니다.</p>
           <p>계산의 핵심 변수는 세 가지입니다. 첫째 세대 간 보험료 차이(연간), 둘째 본인의 연간 비급여 진료비 규모, 셋째 자기부담률 차이입니다. '연간 보험료 절감액'이 '자기부담금 증가액'보다 크면 전환이 유리하고, 작으면 기존 세대를 유지하는 편이 낫습니다. 이 손익 구조는 갱신형 상품의 보험료 상승 위험과도 맞물리므로 <a href="../../insurance-renewal-comparison/">갱신형·비갱신형 비교</a> 기준을 참고해 장기 보험료 추이까지 함께 따져 보는 것이 좋습니다.</p>
           <p>한 가지 더 고려할 점은 나이입니다. 지금은 1세대 보험료가 감당할 만해도, 갱신주기마다 인상되면 10년 뒤 월 10만 원을 넘길 수도 있습니다. 반대로 4세대는 시작이 저렴한 대신 비급여 할증과 전체 요율 인상이 겹칠 수 있습니다. 그래서 단순히 올해 손익만 볼 것이 아니라, 앞으로 5~10년의 예상 보험료와 예상 진료비를 함께 놓고 비교하는 것이 현실적입니다.</p>

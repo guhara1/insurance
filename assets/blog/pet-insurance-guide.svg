@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img">
+  <defs>
+    <linearGradient id="g885e82" x1="0" y1="0" x2="1" y2="1" gradientTransform="rotate(36 .5 .5)">
+      <stop offset="0" stop-color="#9c7326"/><stop offset="1" stop-color="#d8ac57"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="450" fill="url(#g885e82)"/>
+  <circle cx="736" cy="50" r="150" fill="#ffffff" opacity="0.08"/>
+  <circle cx="696" cy="420" r="110" fill="#ffffff" opacity="0.07"/>
+  <g transform="translate(590,125) scale(1.9)"><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M38 24l-14 5v18c0 12 8 20 14 23 6-3 14-11 14-23V29z"/><path fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round" stroke-linejoin="round" d="M62 34l14 5v18c0 10-6 17-11 20" opacity="0.7"/></g>
+  <text x="70" y="216" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">반려동물</text><text x="70" y="278" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="52" font-weight="800" fill="#ffffff">펫보험</text>
+  <text x="70" y="408" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="22" font-weight="800" fill="#ffffff" opacity="0.92"><tspan font-family="serif">保</tspan>  보험지식</text>
+  <g transform="translate(70,420)">
+    <rect x="0" y="-2" width="88" height="26" rx="13" fill="#ffffff" opacity="0.18"/>
+    <text x="14" y="16" font-family="'Apple SD Gothic Neo','Noto Sans KR','Malgun Gothic','맑은 고딕',sans-serif" font-size="15" font-weight="700" fill="#ffffff">보험종류</text>
+  </g>
+</svg>
